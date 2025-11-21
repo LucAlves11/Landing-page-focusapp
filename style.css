@@ -125,3 +125,45 @@ figure img{
     border-radius: 50%;
 }
 
+/* POPUP */
+
+.popup{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    display: flex;
+    
+}
+
+form{
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+form input{ 
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px 16px;
+    border: solid 1px var(--texto);
+}
+
+.botao-fechar{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}

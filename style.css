@@ -1,7 +1,7 @@
 :root{
     --texto: #333333;
     --fundo: #f8f8f8;
-    --fundo-claro: white;
+    --fundo-claro: #ffffff;
     --verde: #4caf50;
     --verde-escuro: #388e3c;
 }
@@ -19,6 +19,12 @@ body{
     color: var(--texto);
 }
 
+body.dark{
+    --texto: #f8f8f8;
+    --fundo: #333;
+    --fundo-claro: #444;
+}
+
 header{
     background-color: var(--texto);
     color: var(--fundo);
@@ -26,6 +32,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 24px;
+}
+
+.img-sol{
+    cursor: pointer;
 }
 
 footer{
@@ -134,8 +144,8 @@ figure img{
     backdrop-filter: blur(4px);
     justify-content: center;
     align-items: center;
-    display: none;
     display: flex;
+    display: none;
     
 }
 
@@ -167,3 +177,4 @@ form input{
     font-weight: 700;
     cursor: pointer;
 }
+

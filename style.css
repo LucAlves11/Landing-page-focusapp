@@ -23,6 +23,16 @@ body.dark{
     --texto: #f8f8f8;
     --fundo: #333;
     --fundo-claro: #444;
+    --verde: #79ff7f;
+    --verde-escuro: #68da6e;
+}
+
+.img-hero-traco-escuro{
+    fill: var(--texto);
+}
+
+.texto-logo{
+    fill: var(--fundo);
 }
 
 header{
@@ -152,7 +162,8 @@ figure img{
 form{
     width: 100%;
     max-width: 400px;
-    background-color: white;
+    background-color: var(--fundo);
+    color: var(--texto);
     padding: 25px;
     text-align: center;
     display: flex;
